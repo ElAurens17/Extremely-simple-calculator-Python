@@ -9,12 +9,16 @@ def divide(q, w):
     
 def multiply(q, w):
     return q * w
-    
+
+def exponent(q, w):   
+    return q ** w
+
 x = int(input("""
       1.add
       2.subtract
       3.multiply
       4.divide
+      5.exponent
           """))
 
 if x == 1:
@@ -41,4 +45,11 @@ elif x == 4:
     w = int(input("2nd value: "))
 
     result = divide(q, w)
+    print("Quotient:", result)
+
+elif x == 5:
+    q = int(input("1st value: "))
+    w = int(input("2nd value: "))
+
+    result = exponent(q, w)
     print("Quotient:", result)
